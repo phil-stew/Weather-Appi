@@ -1,0 +1,42 @@
+h1{
+    background-color: brown;
+}
+
+h5{
+    font-size: 15px;
+}
+
+.b{
+    border: black solid 1px;
+}
+
+.m{
+    padding: 10px;
+    margin: 10px;
+}
+
+.hist{
+    height: 80%;
+    position: fixed;
+    width: 20%;
+    left: 20px;
+
+}
+
+.day{
+    bottom: 100px;
+    height: 35%;
+    position: fixed;
+    width: 70%;
+    right: 53px;
+}
+
+.current{
+    top: 55px;
+    padding: 0.5rem;
+    height: 35%;
+    position: fixed;
+    width: 70%;
+    right: 40px;
+}
+

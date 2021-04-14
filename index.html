@@ -4,14 +4,89 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="assets/CSS/reset.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="assets/CSS/styles.css">
+    <script
+    src="https://code.jquery.com/jquery-3.5.1.min.js"
+    integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+    crossorigin="anonymous"></script>
     <title>Weather Appi</title>
 </head>
-<body>
+<body class="cont">
     <h1>Weather Dash Board</h1>
 
 
+ 
+    <div class="container b current">
+      <h1 id="city" >Location: </h1>
+      <p id="temp">Temperture: </p>
+      <p id="humd">Humidity: </p>
+      <p id="wind">Wind Speed: </p>
+      <p id="uv" >UVI: </p>
+      <p></p>
 
 
-    
+
+    </div>
+
+
+  
+  
+    <div class="container-sm hist b">
+      <div>
+        <input id="cityname" type="text" class="form-control" placeholder="Enter City">
+        <button  type="button" onclick="getName()" class="btn btn-outline-primary">Search</button>
+        
+      </div>
+        <table class="table-primary">City</table>
+      
+    </div>
+
+    <div class="day row container  ">
+      
+      <div  class="col-sm b m">
+        <h5 id="date0"></h5>
+        <p id="icon0"></p>
+        <p id="daytemp0"></p>
+        <p id="humid0"></p>
+        
+      </div>
+
+      <div class="col-sm b m">
+        <h5 id="date1"></h5>
+        <p id="icon1"></p>
+        <p id="daytemp1"></p>
+        <p id="humid1"></p>
+      </div>
+
+      <div class="col-sm b m">
+        <h5 id="date2"></h5>
+        <p id="icon2"></p>
+        <p id="daytemp2"></p>
+        <p id="humid2"></p>
+      </div>
+
+
+      <div class="col-sm b m">     
+        <h5 id="date3"></h5>
+        <p id="icon3"></p>
+        <p id="daytemp3"></p>
+        <p id="humid3"></p>
+      </div>
+
+      <div class="col-sm b m">
+        <h5 id="date4"></h5>
+        <p id="icon4"></p>
+        <p id="daytemp4"></p>
+        <p id="humid4"></p>
+      </div>
+      
+    </div>
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+     <script src="assets/JS/script.js"></script>
 </body>
 </html>
