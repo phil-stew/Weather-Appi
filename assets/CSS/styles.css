@@ -1,7 +1,10 @@
 h1{
-    background-color: brown;
+    background-color: rgb(223, 206, 206);
 }
 
+body{
+    background-color: rgb(202, 195, 245);
+}
 h5{
     font-size: 15px;
 }
@@ -39,4 +42,6 @@ h5{
     width: 70%;
     right: 40px;
 }
-
+.temp:after{
+    content:" \2103";
+  }

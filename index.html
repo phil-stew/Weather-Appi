@@ -20,7 +20,7 @@
  
     <div class="container b current">
       <h1 id="city" >Location: </h1>
-      <p id="temp">Temperture: </p>
+      <p id="temp" class="temp" >Temperture: </p>
       <p id="humd">Humidity: </p>
       <p id="wind">Wind Speed: </p>
       <p id="uv" >UVI: </p>
@@ -35,12 +35,13 @@
   
     <div class="container-sm hist b">
       <div>
-        <input id="cityname" type="text" class="form-control" placeholder="Enter City">
+        <input class="cityname" type="text" class="form-control" placeholder="Enter City">
         <button  type="button" onclick="getName()" class="btn btn-outline-primary">Search</button>
         
       </div>
-        <table class="table-primary">City</table>
-      
+        <table class="table-primary">Recent Searh</table>
+      <ul class="cityname" id="history"  onclick="getName()">
+      </ul>
     </div>
 
     <div class="day row container  ">
@@ -48,7 +49,7 @@
       <div  class="col-sm b m">
         <h5 id="date0"></h5>
         <p id="icon0"></p>
-        <p id="daytemp0"></p>
+        <p id="daytemp0" class="temp"></p>
         <p id="humid0"></p>
         
       </div>
@@ -56,14 +57,14 @@
       <div class="col-sm b m">
         <h5 id="date1"></h5>
         <p id="icon1"></p>
-        <p id="daytemp1"></p>
+        <p id="daytemp1"  class="temp"></p>
         <p id="humid1"></p>
       </div>
 
       <div class="col-sm b m">
         <h5 id="date2"></h5>
         <p id="icon2"></p>
-        <p id="daytemp2"></p>
+        <p id="daytemp2"  class="temp"></p>
         <p id="humid2"></p>
       </div>
 
@@ -71,14 +72,14 @@
       <div class="col-sm b m">     
         <h5 id="date3"></h5>
         <p id="icon3"></p>
-        <p id="daytemp3"></p>
+        <p id="daytemp3" class="temp"></p>
         <p id="humid3"></p>
       </div>
 
       <div class="col-sm b m">
         <h5 id="date4"></h5>
         <p id="icon4"></p>
-        <p id="daytemp4"></p>
+        <p id="daytemp4"  class="temp"></p>
         <p id="humid4"></p>
       </div>
       
