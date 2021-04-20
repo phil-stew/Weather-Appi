@@ -86,7 +86,7 @@ fetch(fiveDay)
         $('#daytemp4').append("Temp: ", temp);
         
         var image = data.list[33].weather[0].icon
-        var iconUrl = "http://openweathermap.org/img/w/" + image + ".png";
+        var iconUrl = "https://openweathermap.org/img/w/" + image + ".png";
         $("#icon4").html("<img src='" + iconUrl  + "'>"); 
 
     var requestOne = 'https://api.openweathermap.org/data/2.5/onecall?lat=' + latt + '&lon=' + long + '&exclude=minutely&exclude=hourly&units=metric&appid=eac047b45b411f6b89b6af8b3c5e347e'
