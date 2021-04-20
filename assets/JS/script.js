@@ -22,7 +22,7 @@ function displayData(cityName){
     
   
 
-var fiveDay = `http://api.openweathermap.org/data/2.5/forecast?q=${cityName}&units=metric&appid=eac047b45b411f6b89b6af8b3c5e347e`
+var fiveDay = `https://api.openweathermap.org/data/2.5/forecast?q=${cityName}&units=metric&appid=eac047b45b411f6b89b6af8b3c5e347e`
 
 storeCityData(cityName)
 
