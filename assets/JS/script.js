@@ -1,5 +1,4 @@
 
-const btn = document.createElement('button')
 
 
 
@@ -49,7 +48,7 @@ fetch(fiveDay)
         var temp1 = data.list[0].main.temp
         $('#daytemp0').append("Temp: ", temp1);
         var image = data.list[0].weather[0].icon
-        var iconUrl = "http://openweathermap.org/img/w/" + image + ".png";
+        var iconUrl = "https://openweathermap.org/img/w/" + image + ".png";
         $("#icon0").html("<img src='" + iconUrl  + "'>");        
 
         var days2 = data.list[8].dt_txt
@@ -58,7 +57,7 @@ fetch(fiveDay)
         var temp2 = data.list[8].main.temp
         $('#daytemp1').append("Temp: ", temp2);
         var image = data.list[8].weather[0].icon
-        var iconUrl = "http://openweathermap.org/img/w/" + image + ".png";
+        var iconUrl = "https://openweathermap.org/img/w/" + image + ".png";
         $("#icon1").html("<img src='" + iconUrl  + "'>");        
 
         var days = data.list[16].dt_txt
@@ -67,7 +66,7 @@ fetch(fiveDay)
         var temp = data.list[16].main.temp
         $('#daytemp2').append("Temp: ", temp);
         var image = data.list[16].weather[0].icon
-        var iconUrl = "http://openweathermap.org/img/w/" + image + ".png";
+        var iconUrl = "https://openweathermap.org/img/w/" + image + ".png";
         $("#icon2").html("<img src='" + iconUrl  + "'>");        
 
         var days = data.list[24].dt_txt
@@ -76,7 +75,7 @@ fetch(fiveDay)
         var temp = data.list[24].main.temp
         $('#daytemp3').append("Temp: ", temp);
         var image = data.list[24].weather[0].icon
-        var iconUrl = "http://openweathermap.org/img/w/" + image + ".png";
+        var iconUrl = "https://openweathermap.org/img/w/" + image + ".png";
         $("#icon3").html("<img src='" + iconUrl  + "'>");        
 
         var days = data.list[33].dt_txt
